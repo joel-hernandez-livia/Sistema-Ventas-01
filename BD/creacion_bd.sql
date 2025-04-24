@@ -1,8 +1,3 @@
-SELECT @@VERSION;
-create database SistemaVentas01
-go
-
-
 
 use SistemaVentas01
 go
@@ -139,33 +134,5 @@ IdVenta int references Venta(IdVenta) not null,
 IdProducto int references Producto(IdProducto) not null
 )
 go
-
-
-
-
--- Modificaciones
-
-SELECT 
-    f.name AS ForeignKey,
-    OBJECT_NAME(f.parent_object_id) AS TableName,
-    COL_NAME(fc.parent_object_id,fc.parent_column_id) AS ColumnName
-FROM 
-    sys.foreign_keys AS f
-INNER JOIN 
-    sys.foreign_key_columns AS fc 
-    ON f.object_id = fc.constraint_object_id
-WHERE 
-    OBJECT_NAME(f.parent_object_id) = 'Venta';
-
-
-alter table venta 
-drop constraint FK__Venta__IdCliente__72C60C4A
-
-alter table venta
-alter column IdCliente int null
-
-alter table venta
-add constraint FK__Venta__IdCliente__72C60C4A
-foreign key (IdCliente) references Cliente(IdCliente)
 
 
