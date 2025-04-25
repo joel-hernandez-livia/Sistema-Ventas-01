@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             this.menuStrip = new System.Windows.Forms.MenuStrip();
+            this.menuStripTitulo = new System.Windows.Forms.MenuStrip();
+            this.label1 = new System.Windows.Forms.Label();
+            this.contenedor = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.menuusuario = new FontAwesome.Sharp.IconMenuItem();
             this.menumantenimiento = new FontAwesome.Sharp.IconMenuItem();
             this.menuventas = new FontAwesome.Sharp.IconMenuItem();
@@ -37,9 +41,6 @@
             this.menuproveedores = new FontAwesome.Sharp.IconMenuItem();
             this.menureportes = new FontAwesome.Sharp.IconMenuItem();
             this.menuacercade = new FontAwesome.Sharp.IconMenuItem();
-            this.menuStripTitulo = new System.Windows.Forms.MenuStrip();
-            this.label1 = new System.Windows.Forms.Label();
-            this.contenedor = new System.Windows.Forms.Panel();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,6 +61,46 @@
             this.menuStrip.Size = new System.Drawing.Size(1194, 71);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "menuStrip1";
+            // 
+            // menuStripTitulo
+            // 
+            this.menuStripTitulo.AutoSize = false;
+            this.menuStripTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(48)))));
+            this.menuStripTitulo.Location = new System.Drawing.Point(0, 0);
+            this.menuStripTitulo.Name = "menuStripTitulo";
+            this.menuStripTitulo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.menuStripTitulo.Size = new System.Drawing.Size(1194, 48);
+            this.menuStripTitulo.TabIndex = 1;
+            this.menuStripTitulo.Text = "menuStrip2";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.label1.Location = new System.Drawing.Point(22, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(245, 29);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Sistema de Ventas 01";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // contenedor
+            // 
+            this.contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.contenedor.Location = new System.Drawing.Point(0, 119);
+            this.contenedor.Name = "contenedor";
+            this.contenedor.Size = new System.Drawing.Size(1194, 523);
+            this.contenedor.TabIndex = 3;
+            // 
+            // label2
+            // 
+            this.label2.Image = global::CapaPresentacion.Properties.Resources.logo_joel_64;
+            this.label2.Location = new System.Drawing.Point(1111, 48);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(71, 64);
+            this.label2.TabIndex = 0;
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // menuusuario
             // 
@@ -182,49 +223,20 @@
             this.menuacercade.Text = "Acerca de";
             this.menuacercade.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
-            // menuStripTitulo
-            // 
-            this.menuStripTitulo.AutoSize = false;
-            this.menuStripTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(48)))));
-            this.menuStripTitulo.Location = new System.Drawing.Point(0, 0);
-            this.menuStripTitulo.Name = "menuStripTitulo";
-            this.menuStripTitulo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.menuStripTitulo.Size = new System.Drawing.Size(1194, 48);
-            this.menuStripTitulo.TabIndex = 1;
-            this.menuStripTitulo.Text = "menuStrip2";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label1.Location = new System.Drawing.Point(22, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(245, 29);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Sistema de Ventas 01";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // contenedor
-            // 
-            this.contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.contenedor.Location = new System.Drawing.Point(0, 119);
-            this.contenedor.Name = "contenedor";
-            this.contenedor.Size = new System.Drawing.Size(1194, 523);
-            this.contenedor.TabIndex = 3;
-            // 
             // Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(48)))));
             this.ClientSize = new System.Drawing.Size(1194, 642);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.contenedor);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip);
             this.Controls.Add(this.menuStripTitulo);
             this.MainMenuStrip = this.menuStrip;
             this.Name = "Inicio";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Inicio_Load);
             this.menuStrip.ResumeLayout(false);
@@ -248,6 +260,7 @@
         private FontAwesome.Sharp.IconMenuItem menuproveedores;
         private FontAwesome.Sharp.IconMenuItem menureportes;
         private System.Windows.Forms.Panel contenedor;
+        private System.Windows.Forms.Label label2;
     }
 }
 

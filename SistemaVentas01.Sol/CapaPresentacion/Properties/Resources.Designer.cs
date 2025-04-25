@@ -63,9 +63,29 @@ namespace CapaPresentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap logo_joel {
+            get {
+                object obj = ResourceManager.GetObject("logo joel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logo_joel_240 {
             get {
                 object obj = ResourceManager.GetObject("logo joel 240", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo_joel_64 {
+            get {
+                object obj = ResourceManager.GetObject("logo joel 64", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

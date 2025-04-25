@@ -10,3 +10,4 @@ D:\PROYECTOS\SISTEMA VENTAS 01\Sistema-Ventas-01\SistemaVentas01.Sol\CapaPresent
 D:\PROYECTOS\SISTEMA VENTAS 01\Sistema-Ventas-01\SistemaVentas01.Sol\CapaPresentacion\obj\Debug\CapaPres.61CA7C38.Up2Date
 D:\PROYECTOS\SISTEMA VENTAS 01\Sistema-Ventas-01\SistemaVentas01.Sol\CapaPresentacion\obj\Debug\CapaPresentacion.exe
 D:\PROYECTOS\SISTEMA VENTAS 01\Sistema-Ventas-01\SistemaVentas01.Sol\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+D:\PROYECTOS\SISTEMA VENTAS 01\Sistema-Ventas-01\SistemaVentas01.Sol\CapaPresentacion\obj\Debug\CapaPresentacion.Login.resources
